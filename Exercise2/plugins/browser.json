@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.tthanh.logbook"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.tthanh.logbook"
         }
     },
     "dependent_plugins": {}
