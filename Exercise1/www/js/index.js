@@ -1,5 +1,5 @@
 function onDeviceReady(){
-    $('a#ring').on('click', function (e) {
+    $('a#ring').on('touchend', function (e) {
         e.preventDefault();
         navigator.notification.beep(1);
         navigator.notification.alert(
@@ -9,7 +9,7 @@ function onDeviceReady(){
         );
     });
 
-    $('a#vibrate').on('click', function (e) {
+    $('a#vibrate').on('touchend', function (e) {
         e.preventDefault();
         navigator.notification.vibrate(2000);
         navigator.notification.alert(
@@ -18,7 +18,7 @@ function onDeviceReady(){
             'Done'
         );
     });
-    $('a#network').on('click',function (e) {
+    $('a#network').on('touchend',function (e) {
         e.preventDefault();
         var status = checkNetwork(navigator.network.connection.type);
         console.log(status);
